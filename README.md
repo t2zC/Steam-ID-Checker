@@ -11,4 +11,4 @@ but if you dont know, use the [precompiled version](https://github.com/Femboysit
 ✅ Webhook Support \
 ✅ Opensource \
 ✅ Proxyless \
-❌ Ban check \
+❌ Ban check 
