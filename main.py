@@ -44,13 +44,13 @@ if r.status_code == 401:
 
 #User check
 while True:
-    id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=len))
+    id = ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercse + string.digits, k=len))
     request = requests.get(f'https://steamcommunity.com/id/{id}')
     lxml = bs4.BeautifulSoup(request.content, 'lxml')
     title = lxml.find('title')
     list = title.text.split()
     if list[-1] == "Error":
         print(f'{id} is Available')
-        requests.post(webhook, data={"content" : "\🌠 New username avalible `" f'{id} ' "` \n rember **it can be banned** or **blacklisted** ;3\n`--------------------------------`"})
+        requests.post(webhook, data={"content" : "\🌠 New username available `" f'{id}' "` \n remember **it can be banned** or **blacklisted**. \n`--------------------------------`"})
     else:
         print(f'{id} is Taken')
