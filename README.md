@@ -1,13 +1,14 @@
 <h1 align="center">
-  🌠 Steam pok
+  🌠 Steam Checker.
 </h1>
 
-### 😽 〢 How to use?
+## 😽 〢 How to use?
 If you know python i dont need to explain
-but if you dont know, use the [precompiled version](https://github.com/Femboysito/Steam-ID-Checker-Proxy-less/releases/tag/v1)
+but if you dont know, use the tutorial. ~~(soon)~~
+## 🐈 〢 Features
+* * [x]  Webhook Support 
+* * [x]  Opensource 
+* * [x]  Proxyless 
+* * [ ] Ban check 
 
-### 🐈 〢 Features
-✅ Webhook Support \
-✅ Opensource \
-✅ Proxyless \
-❌ Ban check 
+<!-- just a little fixes made by 2zC, 10/07/22 -->
