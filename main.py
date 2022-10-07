@@ -14,9 +14,8 @@ console.print(f"""\n\n
             *          .
                    *       '
               *                *                               
-      _ _|_  _   _. ._ _    ._   _  |  
-     _>  |_ (/_ (_| | | |   |_) (_) |< 
-                            |          
+               Steam Checker.
+          @t2zC.          10/07/22 
        '*
            *
                 *
@@ -42,15 +41,17 @@ if r.status_code == 401:
 
 
 
-#User check
+#ID check
 while True:
-    id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=len))
+    id = ''.join(random.choices(string.ascii_uppercase + string.digits + string.ascii_lowercase, k=len))
     request = requests.get(f'https://steamcommunity.com/id/{id}')
     lxml = bs4.BeautifulSoup(request.content, 'lxml')
     title = lxml.find('title')
     list = title.text.split()
     if list[-1] == "Error":
         print(f'{id} is Available')
-        requests.post(webhook, data={"content" : "\🌠 New username avalible `" f'{id} ' "` \n rember **it can be banned** or **blacklisted** ;3\n`--------------------------------`"})
+        requests.post(webhook, data={"content" : "\🌠 New ID Found `"f'{id}'"` \n remember **it can be banned** or **blacklisted.** ;3\n`--------------------------------`"})
     else:
         print(f'{id} is Taken')
+
+#Original made by @Femboysito in github.
