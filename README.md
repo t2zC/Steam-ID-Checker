@@ -9,6 +9,5 @@ but if you dont know, use the tutorial. ~~(soon)~~
 * * [x]  Webhook Support 
 * * [x]  Opensource 
 * * [x]  Proxyless 
-* * [ ] Ban check 
 
 <!-- just a little fixes made by 2zC, 10/07/22 -->
